@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    background-color: #FEF08A;
+    color: #2D2A26;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  }
+}
+
+/* Juicy Orange-Yellow-Green Fiesta Gradient Background */
+.bg-juicy-fiesta {
+  background-color: #FFF0B3;
+  background-image: 
+    radial-gradient(circle at 8% 10%, rgba(255, 122, 0, 0.42) 0%, transparent 42%),
+    radial-gradient(circle at 92% 16%, rgba(255, 215, 0, 0.55) 0%, transparent 46%),
+    radial-gradient(circle at 85% 72%, rgba(34, 197, 94, 0.40) 0%, transparent 48%),
+    radial-gradient(circle at 12% 82%, rgba(74, 222, 128, 0.38) 0%, transparent 46%),
+    radial-gradient(circle at 50% 48%, rgba(255, 179, 71, 0.25) 0%, transparent 52%),
+    linear-gradient(135deg, #FFE29F 0%, #FEF08A 28%, #D9F99D 62%, #BBF7D0 100%);
+  background-attachment: fixed;
+}
+
+/* Custom 3D game buttons with bouncy press feeling */
+.btn-3d {
+  position: relative;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  cursor: pointer;
+}
+.btn-3d:active:not(:disabled) {
+  transform: translateY(3px) !important;
+}
+
+.btn-3d-orange {
+  background-color: #FF8A00;
+  box-shadow: 0 4px 0 #D46B00;
+  color: white;
+}
+.btn-3d-orange:active:not(:disabled) {
+  box-shadow: 0 1px 0 #D46B00 !important;
+}
+
+.btn-3d-yellow {
+  background-color: #FFD447;
+  box-shadow: 0 4px 0 #DCA50E;
+  color: #4A3500;
+}
+.btn-3d-yellow:active:not(:disabled) {
+  box-shadow: 0 1px 0 #DCA50E !important;
+}
+
+.btn-3d-turquoise {
+  background-color: #2BC4B0;
+  box-shadow: 0 4px 0 #189887;
+  color: white;
+}
+.btn-3d-turquoise:active:not(:disabled) {
+  box-shadow: 0 1px 0 #189887 !important;
+}
+
+.btn-3d-purple {
+  background-color: #7755D9;
+  box-shadow: 0 4px 0 #5434B3;
+  color: white;
+}
+.btn-3d-purple:active:not(:disabled) {
+  box-shadow: 0 1px 0 #5434B3 !important;
+}
+
+.btn-3d-coral {
+  background-color: #FF6262;
+  box-shadow: 0 4px 0 #D93B3B;
+  color: white;
+}
+.btn-3d-coral:active:not(:disabled) {
+  box-shadow: 0 1px 0 #D93B3B !important;
+}
+
+.btn-3d-neutral {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 0 #E2D9C8;
+  color: #4A3E31;
+}
+.btn-3d-neutral:active:not(:disabled) {
+  box-shadow: 0 1px 0 #E2D9C8 !important;
+}
+
+/* Island map clouds animation */
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(255, 212, 71, 0.4)); }
+  50% { filter: drop-shadow(0 0 14px rgba(255, 138, 0, 0.8)); }
+}
+
+@keyframes ear-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+.animate-float {
+  animation: float-gentle 3.5s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF2D6;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFD447;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8A00;
+}

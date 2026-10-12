@@ -1,0 +1,6 @@
+{
+  "name": "Tigrito Español - Волшебный мир испанской фонетики",
+  "description": "Интерактивная игра для изучения испанской фонетики с тигрёнком Тигри: 10 игровых миров, мини-игры, карта приключений и озвучка произношения.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
